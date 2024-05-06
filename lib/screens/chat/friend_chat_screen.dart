@@ -24,6 +24,7 @@ class FriendScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("Called First time2");
     final myid = FirebaseAuth.instance.currentUser!.uid;
     return Scaffold(
         appBar: AppBar(
@@ -54,17 +55,17 @@ class FriendScreen extends StatelessWidget {
             ),
           ),
           Column(mainAxisSize: MainAxisSize.min, children: [
-            Expanded(
-                child: Messages(
-              myId: myid,
-              friendId: userId,
-              seen: seen,
-            )),
-            NewMessages(
-              friendId: userId,
-              isFromProduct: isFromProduct,
-            ),
-          ]),
+            // Expanded(
+            //     child: Messages(
+            //   myId: myid,
+            //   friendId: userId,
+            //   seen: seen,
+            // )),
+            // NewMessages(
+            //   friendId: userId,
+            //   isFromProduct: isFromProduct,
+            // ),
+          ],),
         ]));
   }
 }

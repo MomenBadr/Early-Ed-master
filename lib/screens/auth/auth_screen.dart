@@ -32,6 +32,7 @@ class AuthScreenState extends State<AuthScreen> {
 
   void _submitAuthForm(String email, String password, String username,
       bool isLogin, BuildContext ctx) async {
+
     UserCredential authResult;
     try {
       setState(() {
@@ -139,6 +140,7 @@ class AuthScreenState extends State<AuthScreen> {
 
   @override
   Widget build(BuildContext context) {
+    print("auth screen called");
     return SafeArea(
       child: Scaffold(
         body: _forgotpassowrd

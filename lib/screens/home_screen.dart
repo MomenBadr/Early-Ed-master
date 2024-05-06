@@ -66,6 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+
     //final size =MediaQuery.of(context).size;
     var userDataProvider = Provider.of<UserDataProvider>(context);
     return Scaffold(

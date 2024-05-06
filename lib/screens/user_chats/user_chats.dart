@@ -24,6 +24,7 @@ class _MyChatState extends State<MyChat> {
 
   @override
   Widget build(BuildContext context) {
+    print("called First time");
     return Scaffold(
       // appBar: const CustomAppBar(preferredSize: Size.zero, child: Text('')),
       appBar: AppBar(
@@ -39,11 +40,7 @@ class _MyChatState extends State<MyChat> {
             },
             icon: const Icon(Icons.group_add_outlined),
           ),
-         if (isAdelAdmin) IconButton(
-              onPressed: () {
-                FirebaseAuth.instance.signOut();
-              },
-              icon: const Icon(Icons.logout_outlined)),
+
         ],
       ),
       body: StreamBuilder(
