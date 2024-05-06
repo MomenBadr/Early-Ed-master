@@ -59,14 +59,6 @@ class _GradesScreenState extends State<GradesScreen> {
     return Scaffold(
         appBar: AppBar(
           toolbarHeight: 100.h,
-
-          // leading: IconButton(
-          //   icon: const Icon(Icons.home,size: 35,),
-          //   onPressed: () {
-          //     Navigator.push(
-          //         context, MaterialPageRoute(builder: (context) => HomeScreen(),));
-          //   },
-          // ),
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(25),
